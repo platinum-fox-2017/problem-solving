@@ -13,7 +13,7 @@ function problem(input) {
             console.log(`Tanggal ${i}: Tempat Fitness Tutup`)
         } else {
             let result = []
-            jadwal.forEach(person => {
+            schedule.forEach(person => {
                 if ((i - 7) % person.gymSchedule == 0) {
                     result.push(person.name)
                 }
