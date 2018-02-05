@@ -1,0 +1,17 @@
+Tono 2 hari sekali
+Anton 4 hari sekali
+Budi 5 hari sekali
+
+1. Tanggal 7 masuk semua
+
+2. Setiap kelipatan tanggal 5 tempat fitnes tutup
+   (Tanggal 10, 15, 20, 25, 30 --> tampilkan tempat fitness tutup)
+
+3. Setiap kelipatan 2 mulai tanggal 7 maka tono hadir;
+   (Tono hadir pada tanggal 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31) (tanggal 15, 25 tono tidak hadir)
+    
+4. Setiap kelipatan 4 mulai tanggal 7 maka anton hadir
+   (Anton hadir pada tanggal 7, 11, 15, 19, 23, 27, 31) (tanggal 15, anton tidak hadir)
+
+5. Setiap kelipatan 5 mulai tanggal 7 maka budi hadir
+   (Budi hadir pada tanggal 7, 12, 17, 22, 27)
