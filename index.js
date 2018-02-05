@@ -46,6 +46,6 @@ for (var i=tanggalMulai; i<=tanggalSelesai; i++){
     if(i%5 === 0){
         console.log('Tanggal '+i+': '+'Tempat Fitness Tutup');
     }else{
-        console.log('Tanggal '+i+': '+absen);
+        console.log('Tanggal '+i+': '+absen.join(', '));
     }
 }
