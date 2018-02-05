@@ -24,22 +24,23 @@ LOOPING from variable 'tanggal' equal 7 to 31
         PUSH 'Budi' to 'datang'
     PRINT "Tanggal "+ 'tanggal' + ":" + 'datang'
 */
-
-
-var datang = [];
-for(var tanggal = 7; tanggal <= 31; tanggal ++){
-  datang = [];
-  if(tanggal%5==0)
-    datang.push("Tempat Fitness Libur");
-  else{
-    if((tanggal-7)%2==0)
-      datang.push("Tono");
-    if((tanggal-7)%4==0)
-      datang.push("Anton");
-    if((tanggal-7)%5==0)
-      datang.push("Budi");
+function fitnessCalculator(beginDate, endDate = 31){
+  var datang = [];
+  for(var tanggal = beginDate; tanggal <= endDate; tanggal ++){
+    datang = [];
+    if(tanggal%5==0)
+      datang.push("Tempat Fitness Libur");
+    else{
+      if((tanggal-beginDate)%2==0)
+        datang.push("Tono");
+      if((tanggal-beginDate)%4==0)
+        datang.push("Anton");
+      if((tanggal-beginDate)%5==0)
+        datang.push("Budi");
+    }
+    console.log("Tanggal "+tanggal+": "+datang);
   }
-  console.log("Tanggal "+tanggal+": "+datang);
-
-
 }
+
+
+fitnessCalculator(7);
