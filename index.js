@@ -32,26 +32,27 @@ function laporanBulanan () {
 
     var tanggal = 7;
     var libur = 'Tempat Fitness Tutup';
-    var visitors = [];
- 
+    
     while (tanggal <= 31) {
+        var visitors = [];
         if (tanggal % 5 == 0) {
             visitors.push(libur);
-        } 
-        if ((tanggal-7) % 2 == 0 && tanggal % 5 != 0) {
-            visitors.push('Tono');
-        } 
-        if ((tanggal-7) % 4 == 0 && tanggal % 5 != 0) {
-            visitors.push('Anton');
-        } 
-        if ((tanggal-7) % 5 == 0 && tanggal % 5 != 0) {
-            visitors.push('Budi');
+        } else {
+            if ((tanggal-7) % 2 == 0) {
+                visitors.push('Tono');
+            } 
+            if ((tanggal-7) % 4 == 0) {
+                visitors.push('Anton');
+            } 
+            if ((tanggal-7) % 5 == 0) {
+                visitors.push('Budi');
+            }
         }
         var visitorsMerge = visitors.join(', ');
         console.log(`Tanggal ${tanggal}: ${visitorsMerge}`);
         // console.log(hasilArr);
         tanggal++;
-        visitors = [];
+        // visitors = [];
     }
 
 }
